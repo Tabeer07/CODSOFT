@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+  <title>Image</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Tabeer Hussain</h1>
+    <p class="tagline">Aspiring Web Developer Intern</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="portfolio img.jpg" alt="MY PHOTO" class="profile-img"  width="300" >
+    <p>I’m a B.Tech Computer Science & Engineering student with a strong interest in web development, technology, and innovation. I enjoy creating clean, user-friendly websites and continuously learning new skills. Currently, I’m exploring HTML, CSS, JavaScript, and Java, and actively working on personal and team projects to build real-world experience.
+
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>Git / GitHub</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="apni dukan.jpg" alt="Project 1">
+      <div class="project-info">
+        <h3>APNI DUKAN</h3>
+        <p> ApniDukan Mart Website
+            A local grocery and chicken store website built with HTML and CSS to showcase products, offers, and contact info.
+            .</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="Screenshot 2025-07-22 170727.png" alt="Project 2">
+      <div class="project-info">
+        <h3>Traffic Controller</h3>
+        <p> Smart Traffic Controller System (Hackathon Project)
+            Working on a real-time traffic signal automation system for Smart India Hackathon, aimed at reducing congestion using sensor and logic integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p><a href="assets/YourName_Resume.pdf" download>Download My Resume (PDF)</a></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="hussaintabeer217@GMAIL.COM">youremail@example.com</a></p>
+    <p>Phone: +91‑9541689378</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tabeer-hussain-4b0628372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body{ font-family: Arial, sans-serif; color: #000000; background: #96d7e4; line-height: 1.6; }
+
+header {
+  background: #f00606; color: rgb(43, 235, 8); text-align: center; padding: 2rem;
+}
+header .tagline { font-style: italic; }
+header nav a {
+  color: rgb(14, 10, 234); margin: 0 0.8rem; text-decoration: none;
+}
+header nav a:hover { text-decoration: underline; }
+
+section {
+  max-width: 800px; margin: 2rem auto; background: white; padding: 1.5rem; border-radius: 8px;
+}
+.profile-img {
+  display: block; width: 150px; height: 150px; border-radius: 50%; margin: 1rem auto;
+}
+.skills-list { display: flex; flex-wrap: wrap; gap: 1rem; list-style: none; padding: 1rem 0; }
+.skills-list li {
+  background: #e0e0e0; padding: 0.6rem 1rem; border-radius: 20px;
+}
+
+.project-card {
+  display: flex; flex-wrap: wrap; margin-bottom: 1.5rem; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;
+}
+.project-card img {
+  width: 200px; object-fit: cover;
+}
+.project-info { padding: 1rem; flex: 1; }
+
+#resume a {
+  background: #0066cc; color: white; padding: 0.8rem 1.4rem; text-decoration: none; border-radius: 4px;
+}
+#resume a:hover { background: #0055aa; }
+
+#contact p { margin-bottom: 0.5rem; }
+#contact a { color: #0066cc; text-decoration: none; }
+#contact a:hover { text-decoration: underline; }
+
+footer {
+  text-align: center; padding: 1rem; background: #333; color: white; margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .project-card { flex-direction: column; }
+  .project-card img { width: 100%; height: auto; }
+}
+
+</style>
